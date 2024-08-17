@@ -26,15 +26,19 @@
   background-color: #393f4d;
   grid-area: header;
   display: grid;
-  grid-template-columns: 300px 800px;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  justify-self: start;
 }
 
 .menu ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .menu ul,
@@ -99,6 +103,7 @@
   font-family: sans-serif;
   color: white;
   text-align: left;
+  padding: 5px;
 }
 
 .article .card {
